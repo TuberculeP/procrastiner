@@ -1,0 +1,64 @@
+:root {
+  --fond-page: #f5f5f5;
+  --fond-carte: #ffffff;
+  --texte: #242424;
+  --texte-doux: #616161;
+  --bordure: #e0e0e0;
+  --accent: #0f6cbd;
+  --accent-fort: #0c5aa0;
+
+  /* Couleurs par catégorie, façon catégories Outlook */
+  --cat-reunion: #0f6cbd;
+  --cat-reunion-fond: #e3eefa;
+  --cat-pause: #13a10e;
+  --cat-pause-fond: #e3f5e2;
+  --cat-admin: #8764b8;
+  --cat-admin-fond: #efe9f7;
+  --cat-faux-travail: #ca5010;
+  --cat-faux-travail-fond: #fbeee6;
+  --cat-social: #c239b3;
+  --cat-social-fond: #f9e6f6;
+  --cat-attente: #7a7574;
+  --cat-attente-fond: #efeeed;
+
+  font-family: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+  color: var(--texte);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fond-page: #1f1f1f;
+    --fond-carte: #292929;
+    --texte: #f0f0f0;
+    --texte-doux: #adadad;
+    --bordure: #3d3d3d;
+    --accent: #2b88d8;
+    --accent-fort: #479ef5;
+
+    --cat-reunion: #479ef5;
+    --cat-reunion-fond: #1e3247;
+    --cat-pause: #54b054;
+    --cat-pause-fond: #1f3a1f;
+    --cat-admin: #a98ad6;
+    --cat-admin-fond: #352b45;
+    --cat-faux-travail: #e97548;
+    --cat-faux-travail-fond: #45291c;
+    --cat-social: #d660c9;
+    --cat-social-fond: #42213f;
+    --cat-attente: #a19f9d;
+    --cat-attente-fond: #383635;
+
+    color-scheme: dark;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--fond-page);
+  min-height: 100vh;
+}
